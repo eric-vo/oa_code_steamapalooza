@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 # Names of the images to be used (without file extension)
-NAMES = ("angelina", "anna", "trisha", "derek", "sean", "veronica")
+NAMES = ("angelina", "anna", "eric", "veronica", "sean", "derek", "trisha")
 
 # Text parameters
 TEXT_FONT = cv2.FONT_HERSHEY_SIMPLEX
