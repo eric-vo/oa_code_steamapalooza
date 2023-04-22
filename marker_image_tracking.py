@@ -51,12 +51,10 @@ while True:
                 # Calculate the perspective transformation
                 # between the marker and the image
                 M = cv.getPerspectiveTransform(
-                    np.array(  # Image corners
-                        [[0, 0],
-                         [image.shape[1], 0],
-                         [image.shape[1], image.shape[0]],
-                         [0, image.shape[0]]], dtype='float32'
-                    ),
+                    np.array([[0, 0],
+                              [image.shape[1], 0],
+                              [image.shape[1], image.shape[0]],
+                              [0, image.shape[0]]], dtype='float32'),
                     corners_i  # Marker corners
                 )
 
